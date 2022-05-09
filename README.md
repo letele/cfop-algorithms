@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## CFOP Algorithms
 
-This projects outlines algorithms used in solving the rubok's coube using the CFOP method
+This projects outlines algorithms used in solving the rubk's cube using the CFOP method
 
 ### Available alorothms are
 
