@@ -1,0 +1,260 @@
+.wrapper{
+  --z: 2.5vmax;
+  --flength:5vmax;
+  perspective: 100vmax;
+  height: 8vmax;
+  width: 8vmax;
+  position: relative;
+}
+.cube {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.lefthand{
+  left: 27%;
+  top: 25%;
+  transform:rotateZ(12deg) rotateX(-27deg) rotateY(33deg);
+}
+.righthand{
+  top: 20%;
+  left: 18%;
+  transform:rotateZ(-12deg) rotateX(-27deg) rotateY(-33deg);
+}
+
+.front {
+  transform: translateZ(var(--z));
+}
+.top {
+  transform: rotateX(90deg) translateZ(var(--z));
+}
+.right {
+  transform: rotateY(90deg) translateZ(var(--z));
+}
+.left {
+  transform: rotateY(-90deg) translateZ(var(--z));
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(var(--z));
+}
+.back {
+  transform: rotateY(-180deg) translateZ(var(--z));
+}
+
+.side{
+  background: #000000;
+  width: var(--flength);
+  height: var(--flength);
+  border: 1px solid #00000062;
+  border-radius: 5%;
+  position: absolute;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(3,1fr);
+}
+.square{
+  background: #b8b8b8;
+  border-radius: 5%;
+}
+.top .square:nth-child(5){
+  background: yellow;
+}
+.left .square:nth-child(5),
+.left .square:nth-child(8),
+.liului .front .square:nth-child(7),
+.liului .left .square:nth-child(6),
+.liulfru2rifi .front .square:nth-child(4),
+.liulfru2rifi .front .square:nth-child(7),
+.liuluiliul .left .square:nth-child(2),
+.liuiluliuil .left .square:nth-child(2),
+.liuiluliuil .front .square:nth-child(7),
+.lululuiliuili .left .square:nth-child(2),
+.lululuiliuili .left .square:nth-child(9),
+.liuil .top .square:nth-child(7),
+.uliuiluiliuil .top .square:nth-child(7),
+.uliui2luliui2l .left .square:nth-child(3),
+.f2ruriuif2 .left .square:nth-child(3),
+.fru2rifi .front .square:nth-child(1),
+.fru2rifi .top .square:nth-child(2),
+.uiliui2luiliul .front .square:nth-child(1),
+.uiliul .left .square:nth-child(2),
+.uiliul .left .square:nth-child(3),
+.lui2l2uil .front .square:nth-child(2),
+.lui2l2uil .top .square:nth-child(7),
+.liuluidiluli .top .square:nth-child(4),
+.liuluidiluli .top .square:nth-child(7),
+.uliuluiliuil .left .square:nth-child(2),
+.uliuluiliuil .top .square:nth-child(7),
+.liui2luliuil .left .square:nth-child(2),
+.liui2luliuil .front .square:nth-child(1),
+.u2li2u2luliuli2 .front .square:nth-child(1),
+.u2li2u2luliuli2 .front .square:nth-child(2),
+.uliululiu2l .left .square:nth-child(3),
+.uliululiu2l .left .square:nth-child(6),
+.uliuildiluli .left .square:nth-child(3),
+.uliuildiluli .front .square:nth-child(4)
+{
+  background: orange;
+}
+.right .square:nth-child(5),
+.right .square:nth-child(8),
+.ruiriu .front .square:nth-child(9),
+.ruiriu .right .square:nth-child(4),
+.ruirifiliui2lf .front .square:nth-child(6),
+.ruirifiliui2lf .front .square:nth-child(9),
+.ruridilui2l2uil .front .square:nth-child(6),
+.ruridilui2l2uil .right .square:nth-child(7),
+.ruiriuruiri .right .square:nth-child(2),
+.ruriuiruri .right .square:nth-child(2),
+.ruriuiruri .front .square:nth-child(9),
+.riuiriuiriurur .right .square:nth-child(2),
+.riuiriuiriurur .right .square:nth-child(7),
+.ruri .top .square:nth-child(9),
+.uiruriururi .top .square:nth-child(9),
+.uiru2riuiru2ri .right .square:nth-child(1),
+.f2liuiluf2 .right .square:nth-child(1),
+.filiui2lf .front .square:nth-child(3),
+.filiui2lf .top .square:nth-child(2),
+.uru2riuruiri .front .square:nth-child(3),
+.uruiri .right .square:nth-child(1),
+.uruiri .right .square:nth-child(2),
+.riu2ri2uri .front .square:nth-child(2),
+.riu2ri2uri .top .square:nth-child(9),
+.ruiriudriuir .top .square:nth-child(6),
+.ruiriudriuir .top .square:nth-child(9),
+.uiruiriururi .right .square:nth-child(2),
+.uiruiriururi .top .square:nth-child(9),
+.ru2riuiruri .right .square:nth-child(2),
+.ru2riuiruri .front .square:nth-child(3),
+.ui2r2ui2riuiruir2 .front .square:nth-child(2),
+.ui2r2ui2riuiruir2 .front .square:nth-child(3),
+.ruriuiruriuiruri .front .square:nth-child(3),
+.ruriuiruriuiruri .right .square:nth-child(4),
+.ruiridriur .front .square:nth-child(3),
+.ruiridriur .front .square:nth-child(6),
+.uiruiriuiru2ri .right .square:nth-child(1),
+.uiruiriuiru2ri .right .square:nth-child(4),
+.uiruridriuir .right .square:nth-child(1),
+.uiruridriuir .front .square:nth-child(6)
+{
+  background: red;
+}
+.front .square:nth-child(5),
+.front .square:nth-child(8),
+.liului .front .square:nth-child(4),
+.ruiriu .front .square:nth-child(6),
+.ruirifiliui2lf .right .square:nth-child(4),
+.ruridilui2l2uil .front .square:nth-child(9),
+.ruridilui2l2uil .right .square:nth-child(4),
+.liulfru2rifi .left .square:nth-child(6),
+.liuluiliul .top .square:nth-child(4),
+.liuluiliul .left .square:nth-child(9),
+.ruiriuruiri .right .square:nth-child(7),
+.ruiriuruiri .top .square:nth-child(6),
+.liuiluliuil .top .square:nth-child(4),
+.ruriuiruri .top .square:nth-child(6),
+.lululuiliuili .top .square:nth-child(4),
+.lululuiliuili .front .square:nth-child(7),
+.riuiriuiriurur .top .square:nth-child(6),
+.riuiriuiriurur .front .square:nth-child(9),
+.liuil .top .square:nth-child(2),
+.liuil .front .square:nth-child(1),
+.ruri .top .square:nth-child(2),
+.ruri .front .square:nth-child(3),
+.uliuiluiliuil .top .square:nth-child(6),
+.uliuiluiliuil .front .square:nth-child(1),
+.uiruriururi .top .square:nth-child(4),
+.uiruriururi .front .square:nth-child(3),
+.uliui2luliui2l .top .square:nth-child(6),
+.uliui2luliui2l .top .square:nth-child(7),
+.uiru2riuiru2ri .top .square:nth-child(4),
+.uiru2riuiru2ri .top .square:nth-child(9),
+.f2liuiluf2 .top .square:nth-child(2),
+.f2liuiluf2 .top .square:nth-child(9),
+.f2ruriuif2 .top .square:nth-child(2),
+.f2ruriuif2 .top .square:nth-child(7),
+.filiui2lf .right .square:nth-child(1),
+.fru2rifi .left .square:nth-child(3),
+.uiliui2luiliul .top .square:nth-child(2),
+.uiliui2luiliul .left .square:nth-child(3),
+.uru2riuruiri .top .square:nth-child(2),
+.uru2riuruiri .right .square:nth-child(1),
+.uiliul .top .square:nth-child(4),
+.uiliul .top .square:nth-child(7),
+.uruiri .top .square:nth-child(6),
+.uruiri .top .square:nth-child(9),
+.lui2l2uil .front .square:nth-child(1),
+.lui2l2uil .top .square:nth-child(8),
+.riu2ri2uri .front .square:nth-child(3),
+.riu2ri2uri .top .square:nth-child(8),
+.liuluidiluli .front .square:nth-child(1),
+.liuluidiluli .left .square:nth-child(2),
+.ruiriudriuir .right .square:nth-child(2),
+.ruiriudriuir .front .square:nth-child(3),
+.uliuluiliuil .front .square:nth-child(1),
+.uliuluiliuil .top .square:nth-child(4),
+.uiruiriururi .front .square:nth-child(3),
+.uiruiriururi .top .square:nth-child(6),
+.liui2luliuil .top .square:nth-child(4),
+.liui2luliuil .left .square:nth-child(3),
+.ru2riuiruri .right .square:nth-child(1),
+.ru2riuiruri .top .square:nth-child(6),
+.u2li2u2luliuli2 .left .square:nth-child(3),
+.u2li2u2luliuli2 .top .square:nth-child(8),
+.ui2r2ui2riuiruir2 .right .square:nth-child(1),
+.ui2r2ui2riuiruir2 .top .square:nth-child(8),
+.ruriuiruriuiruri .front .square:nth-child(6),
+.ruriuiruriuiruri .right .square:nth-child(1),
+.ruiridriur .right .square:nth-child(1),
+.ruiridriur .right .square:nth-child(4),
+.uliululiu2l .top .square:nth-child(7),
+.uliululiu2l .front .square:nth-child(4),
+.uiruiriuiru2ri .front .square:nth-child(6),
+.uiruiriuiru2ri .top .square:nth-child(9),
+.uliuildiluli .left .square:nth-child(6),
+.uliuildiluli .top .square:nth-child(7),
+.uiruridriuir .right .square:nth-child(4),
+.uiruridriuir .top .square:nth-child(9)
+{
+  background: blue;
+}
+.liului .left .square:nth-child(9),
+.ruiriu .right .square:nth-child(7),
+.ruirifiliui2lf .right .square:nth-child(7),
+.liulfru2rifi .left .square:nth-child(9),
+.liuluiliul .front .square:nth-child(7),
+.ruiriuruiri .front .square:nth-child(9),
+.liuiluliuil .left .square:nth-child(9),
+.ruriuiruri .right .square:nth-child(7),
+.liuil .left .square:nth-child(3),
+.ruri .right .square:nth-child(1),
+.uliuiluiliuil .left .square:nth-child(3),
+.uiruriururi .right .square:nth-child(1),
+.uliui2luliui2l .front .square:nth-child(1),
+.uiru2riuiru2ri .front .square:nth-child(3),
+.f2liuiluf2 .front .square:nth-child(3),
+.f2ruriuif2 .front .square:nth-child(1),
+.filiui2lf .top .square:nth-child(9),
+.fru2rifi .top .square:nth-child(7),
+.uiliui2luiliul .top .square:nth-child(7),
+.uru2riuruiri .top .square:nth-child(9),
+.uiliul .front .square:nth-child(1),
+.uruiri .front .square:nth-child(3),
+.lui2l2uil .left .square:nth-child(3),
+.riu2ri2uri .right .square:nth-child(1),
+.liuluidiluli .left .square:nth-child(3),
+.ruiriudriuir .right .square:nth-child(1),
+.uliuluiliuil .left .square:nth-child(3),
+.uiruiriururi .right .square:nth-child(1),
+.liui2luliuil .top .square:nth-child(7),
+.ru2riuiruri .top .square:nth-child(9),
+.u2li2u2luliuli2 .top .square:nth-child(7),
+.ui2r2ui2riuiruir2 .top .square:nth-child(9),
+.ruriuiruriuiruri .top .square:nth-child(9),
+.ruiridriur .top .square:nth-child(9),
+.uliululiu2l .front .square:nth-child(1),
+.uiruiriuiru2ri .front .square:nth-child(3),
+.uliuildiluli .front .square:nth-child(1),
+.uiruridriuir .front .square:nth-child(3)
+{
+  background: white;
+}

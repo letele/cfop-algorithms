@@ -1,0 +1,385 @@
+.oll-cube{
+    --len: 8vmax;
+    --cube-len: 75%;
+    --padding: calc(0.5*(var(--len) - var(--cube-len)));
+    --strip-len:calc(0.055*var(--cube-len));
+    --strip-pad:calc(0.55*var(--padding));
+    --bg-color:#7a7a7a;
+}
+.oll-grid-wrapper{
+    height: var(--len);
+    width: var(--len);
+    position: relative;
+}
+
+.oll-cube-face{
+    background: var(--bg-color);
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: var(--cube-len); 
+    width: var(--cube-len);
+    position: absolute;
+    left: var(--padding); 
+    top: var(--padding);
+}
+
+.oll-square{
+    border: 1px solid var(--bg-color);
+    position: relative;
+    border-radius: 12%;
+    background: yellow;
+}
+.oll-strip{
+    position: absolute;
+    display: grid;
+}
+.top-strip, .bottom-strip{
+    grid-template-columns: repeat(3,1fr);
+    height: var(--strip-len);
+    width: var(--cube-len);
+}
+.left-strip, .right-strip{
+    height: var(--cube-len);
+    width: var(--strip-len);
+}
+
+.top-strip{
+    left: var(--padding);
+    top: var(--strip-pad);
+}
+.bottom-strip{
+    left: var(--padding);
+    bottom: var(--strip-pad);
+}
+.left-strip{
+    left: var(--strip-pad);
+    top: var(--padding);
+}
+.right-strip{
+    right: var(--strip-pad);
+    top: var(--padding);
+}
+
+@media screen and (max-width: 600px){
+    .top-strip, .bottom-strip{
+        height: calc(0.075*var(--cube-len));
+    }
+    .left-strip, .right-strip{
+        width: calc(0.075*var(--cube-len));
+    }
+    
+  }
+
+/* bi-id */
+.fiLiUiLUf .oll-square:nth-child(2),
+.fiLiUiLUf .oll-square:nth-child(3n+3),
+.fRURiUifi .oll-square:nth-child(2),
+.fRURiUifi .oll-square:nth-child(3n+1),
+/* C Shape */
+.RiUiRiFRFiUR .oll-square:nth-child(3n+3),
+.RiUiRiFRFiUR .oll-square:nth-child(4),
+.RUR2UiRiFRURUiFi .oll-square:nth-child(n+1):nth-child(-n+3),
+.RUR2UiRiFRURUiFi .oll-square:nth-child(8),
+/* Cross */
+.FRURiUi3Fi .oll-square:nth-child(odd):not(:nth-child(5)),
+.RU2R2UiR2UiR2U2R .oll-square:nth-child(odd):not(:nth-child(5)),
+.rURiUiMi2URUiRiUiMi .oll-square:nth-child(even),
+/* Dots */
+.fiLiUiLUFUiFiLiUiLUF .oll-square:nth-child(n+2):not(:nth-child(5)),
+.fRURiUifiUFRURiUiFi .oll-square:not(:nth-child(3)):not(:nth-child(5)),
+.FRiFiRURUiRiUFRURiUiFi .oll-square:nth-child(n+2):not(:nth-child(3)):not(:nth-child(5)),
+.FRiFiRURUiRiUiFRURiUiFi .oll-square:nth-child(n+1):nth-child(-n+4),
+.FRiFiRURUiRiUiFRURiUiFi .oll-square:nth-child(n+5):nth-child(-n+9):not(:nth-child(odd)),
+.FRURiUiFifRURiUiFi .oll-square:not(:nth-child(5)),
+.RU2R2FRFiU2RiFRFi .oll-square:not(:nth-child(5)),
+/* L Shape */
+.FiUiLiUi2LULiUiLF .oll-square:nth-child(n+1):nth-child(-n+3), 
+.FiUiLiUi2LULiUiLF .oll-square:nth-child(n+7):nth-child(-n+8), 
+.FURU2RiUiRURIFi .oll-square:nth-child(n+1):nth-child(-n+3),
+.FURU2RiUiRURIFi .oll-square:nth-child(n+8):nth-child(-n+9),
+.liUilLiUiLUliUl .oll-square:nth-child(n+2):nth-child(-n+3),
+.liUilLiUiLUliUl .oll-square:nth-child(n+7):nth-child(-n+9),
+.rUriRURiUirUiri .oll-square:nth-child(n+1):nth-child(-n+2),
+.rUriRURiUirUiri .oll-square:nth-child(n+7):nth-child(-n+9),
+/* Line */
+.fRURiUi2fi .oll-square:nth-child(n+1):nth-child(-n+3),
+.fRURiUi2fi .oll-square:nth-child(n+7):nth-child(-n+9),
+.FRURiUiRFirURiUiri .oll-square:nth-child(n+1):nth-child(-n+3),
+.FRURiUiRFirURiUiri .oll-square:nth-child(n+7):nth-child(-n+9),
+.RURiURdiRUiRiFi .oll-square:nth-child(3n+1),
+.RURiURdiRUiRiFi .oll-square:nth-child(3n+3),
+.RU2R2UiRUiRiU2FRFi .oll-square:nth-child(3n+1),
+.RU2R2UiRUiRiU2FRFi .oll-square:nth-child(3n+3),
+.RURiURiFRFiU2RiFRFi .oll-square:not(:nth-child(1)):not(:nth-child(5)):not(:nth-child(9)),
+/* P Shape */
+.LUFiUiLiULFLi .oll-square:nth-child(3n+3),
+.LUFiUiLiULFLi .oll-square:nth-child(8),
+.RiUiFURUiRiFiR .oll-square:nth-child(3n+1),
+.RiUiFURUiRiFiR .oll-square:nth-child(8),
+/* Right Angle */
+.FiLiUiLU2F .oll-square:nth-child(odd):not(:nth-child(5)),
+.FiLiUiLU2F .oll-square:nth-child(4n+4),
+.FRURiUi2F .oll-square:nth-child(odd):not(:nth-child(5)),
+.FRURiUi2F .oll-square:nth-child(2n+6),
+.liUli2Uili2Uili2Uli .oll-square:nth-child(odd):not(:nth-child(5)),
+.liUli2Uili2Uili2Uli .oll-square:nth-child(2n+6),
+.rUir2Ur2Ur2Uir .oll-square:nth-child(odd):not(:nth-child(5)),
+.rUir2Ur2Ur2Uir .oll-square:nth-child(4n+4),
+.liUi2LULiUiLULULiUl .oll-square:nth-child(odd):not(:nth-child(5)),
+.liUi2LULiUiLULULiUl .oll-square:nth-child(4n+4),
+.rU2RiUiRURiUiRUiri .oll-square:nth-child(odd):not(:nth-child(5)),
+.rU2RiUiRURiUiRUiri .oll-square:nth-child(2n+6),
+.LiUiLULFiLiLiUiLUF .oll-square:nth-child(odd):not(:nth-child(5)):not(:nth-child(7)),
+.LiUiLULFiLiLiUiLUF .oll-square:nth-child(4n+4), 
+.RURiUiRiFRRURiUiFi .oll-square:nth-child(odd):not(:nth-child(5)):not(:nth-child(9)),
+.RURiUiRiFRRURiUiFi .oll-square:nth-child(2n+6),
+/* Snake */
+.LFiLiUiLUFUiLi .oll-square:nth-child(n+1):nth-child(-n+2),
+.LFiLiUiLUFUiLi .oll-square:nth-child(n+8):nth-child(-n+9),
+.RiFRURiUiFiUR .oll-square:nth-child(n+2):nth-child(-n+3),
+.RiFRURiUiFiUR .oll-square:nth-child(n+7):nth-child(-n+8),
+/* Square */
+.liU2LULiUL .oll-square:nth-child(3n+3),
+.liU2LULiUL .oll-square:nth-child(n+7):nth-child(-n+8),
+.rUi2RiUiRUiRi .oll-square:nth-child(3n+1),
+.rUi2RiUiRUiRi .oll-square:nth-child(n+8):nth-child(-n+9),
+.LiUiLUiLiUi2L .oll-square:nth-child(odd):not(:nth-child(5)):not(:nth-child(9)),
+.RURiURU2Ri .oll-square:nth-child(odd):not(:nth-child(5)):not(:nth-child(7)),
+.FRiFiRURUiRi .oll-square:nth-child(3n+3):not(:nth-child(9)),
+.FRiFiRURUiRi .oll-square:nth-child(n+7):nth-child(-n+8),
+.RU2R2FRFiRU2Ri .oll-square:nth-child(3n+1):not(:nth-child(1)),
+.RU2R2FRFiRU2Ri .oll-square:nth-child(n+2):nth-child(-n+3),
+/* T Shape */
+.FRURiUiFi .oll-square:nth-child(n+1):nth-child(-n+2),
+.FRURiUiFi .oll-square:nth-child(n+7):nth-child(-n+8),
+.RURiUiRiFRFi .oll-square:nth-child(n+1):nth-child(-n+2),
+.RURiUiRiFRFi .oll-square:nth-child(n+7):nth-child(-n+8),
+/* Two Piece */
+.FRFirURiUiri .oll-square:nth-child(6n+1),
+.FirURiUiriFR .oll-square:nth-child(8n+1),
+.rURiUiriRURUiRi .oll-square:nth-child(n+6):not(:nth-child(odd)),
+.R2DRiU2RDiRiU2Ri .oll-square:nth-child(n+6):not(:nth-child(even)),
+.RURiUiMiURUiri .oll-square:nth-child(6n+2),
+/* W Shape */
+.LiUiLUiLiULULFiLiF .oll-square:nth-child(n+3):nth-child(-n+4),
+.LiUiLUiLiULULFiLiF .oll-square:nth-child(n+7):nth-child(-n+8),
+.RURiURUiRiUiRiFRFi .oll-square:nth-child(5n+1),
+.RURiURUiRiUiRiFRFi .oll-square:nth-child(n+8):nth-child(-n+9),
+/* zY Shape */
+.FiUiLiUi2LU2F .oll-square:nth-child(7n+1),
+.FiUiLiUi2LU2F .oll-square:nth-child(n+3):nth-child(-n+4),
+.FURU2RiUi2Fi .oll-square:nth-child(7n+1),
+.FURU2RiUi2Fi .oll-square:nth-child(3n+3):not(:nth-child(9)),
+.LiUiLUiLiUi2LFiLiUiLUF .oll-square:nth-child(7n+1),
+.LiUiLUiLiUi2LFiLiUiLUF .oll-square:nth-child(n+3):nth-child(-n+4),
+.RURiURU2RiFRURiUiFi .oll-square:nth-child(7n+1),
+.RURiURU2RiFRURiUiFi .oll-square:nth-child(3n+3):not(:nth-child(9)),
+/* z Shape */
+.liUiLUiLiUi2l .oll-square:nth-child(5n+3),
+.liUiLUiLiUi2l .oll-square:nth-child(3n+1),
+.rURiURU2ri .oll-square:nth-child(7n+1),
+.rURiURU2ri .oll-square:nth-child(3n+3),
+.FiLiUiLUFUiFiLiUiLUF .oll-square:nth-child(5n+2),
+.FiLiUiLUFUiFiLiUiLUF .oll-square:nth-child(3n+3),
+.FRURiUiFiUFRURiUiFi .oll-square:nth-child(7n+2),
+.FRURiUiFiUFRURiUiFi .oll-square:nth-child(3n+1)
+{
+    background: #fff;
+}
+
+/* bi-id */
+.top-strip .fiLiUiLUf:nth-child(2),  
+.right-strip .fiLiUiLUf,  
+.top-strip .fRURiUifi:nth-child(2),  
+.left-strip .fRURiUifi,  
+/* C Shape */
+.right-strip .RiUiRiFRFiUR,  
+.left-strip .RiUiRiFRFiUR:nth-child(2),  
+.top-strip .RUR2UiRiFRURUiFi:nth-child(2),  
+.right-strip .RUR2UiRiFRURUiFi:nth-child(1),  
+.bottom-strip .RUR2UiRiFRURUiFi:nth-child(2),
+.left-strip .RUR2UiRiFRURUiFi:nth-child(1),
+/* Cross */
+.top-strip .FRURiUi3Fi:nth-child(odd),
+.bottom-strip .FRURiUi3Fi:nth-child(odd),
+.top-strip .RU2R2UiR2UiR2U2R:nth-child(3),
+.bottom-strip .RU2R2UiR2UiR2U2R:nth-child(3),
+.left-strip .RU2R2UiR2UiR2U2R:nth-child(odd),
+.oll-strip .rURiUiMi2URUiRiUiMi:nth-child(even),
+/* Dots */
+.top-strip .fiLiUiLUFUiFiLiUiLUF:nth-child(2),
+.right-strip .fiLiUiLUFUiFiLiUiLUF:not(:nth-child(3)),
+.bottom-strip .fiLiUiLUFUiFiLiUiLUF:not(:nth-child(1)),
+.left-strip .fiLiUiLUFUiFiLiUiLUF:not(:nth-child(1)),
+.top-strip .fRURiUifiUFRURiUiFi:nth-child(2),
+.right-strip .fRURiUifiUFRURiUiFi:not(:nth-child(1)),
+.bottom-strip .fRURiUifiUFRURiUiFi:not(:nth-child(3)),
+.left-strip .fRURiUifiUFRURiUiFi:not(:nth-child(3)),
+.top-strip .FRiFiRURUiRiUFRURiUiFi:nth-child(2),
+.right-strip .FRiFiRURUiRiUFRURiUiFi:nth-child(2),
+.bottom-strip .FRiFiRURUiRiUFRURiUiFi,
+.left-strip .FRiFiRURUiRiUFRURiUiFi:nth-child(2),
+.top-strip .FRiFiRURUiRiUiFRURiUiFi:nth-child(2),
+.right-strip .FRiFiRURUiRiUiFRURiUiFi:not(:nth-child(3)),
+.bottom-strip .FRiFiRURUiRiUiFRURiUiFi:nth-child(2),
+.left-strip .FRiFiRURUiRiUiFRURiUiFi:not(:nth-child(3)),
+.top-strip .FRURiUiFifRURiUiFi:not(:nth-child(1)),
+.right-strip .FRURiUiFifRURiUiFi:nth-child(2),
+.bottom-strip .FRURiUiFifRURiUiFi:not(:nth-child(1)),
+.left-strip .FRURiUiFifRURiUiFi,
+.top-strip .RU2R2FRFiU2RiFRFi:nth-child(2),
+.right-strip .RU2R2FRFiU2RiFRFi,
+.bottom-strip .RU2R2FRFiU2RiFRFi:nth-child(2),
+.left-strip .RU2R2FRFiU2RiFRFi,
+/* L Shape */
+.top-strip .FiUiLiUi2LULiUiLF:not(:nth-child(1)),
+.bottom-strip .FiUiLiUi2LULiUiLF:not(:nth-child(3)),
+.left-strip .FiUiLiUi2LULiUiLF:nth-child(1),
+.top-strip .FURU2RiUiRURIFi:not(:nth-child(3)),
+.right-strip .FURU2RiUiRURIFi:nth-child(1),
+.bottom-strip .FURU2RiUiRURIFi:not(:nth-child(1)),
+.top-strip .liUilLiUiLUliUl:nth-child(2),
+.right-strip .liUilLiUiLUliUl:nth-child(1),
+.bottom-strip .liUilLiUiLUliUl:not(:first-child),
+.left-strip .liUilLiUiLUliUl:nth-child(3),
+.top-strip .rUriRURiUirUiri:nth-child(2),
+.right-strip .rUriRURiUirUiri:nth-child(3),
+.bottom-strip .rUriRURiUirUiri:not(:nth-child(3)),
+.left-strip .rUriRURiUirUiri:nth-child(1),
+/* Line */
+.top-strip .fRURiUi2fi:not(:nth-child(1)),
+.bottom-strip .fRURiUi2fi:not(:nth-child(1)),
+.left-strip .fRURiUi2fi:not(:nth-child(2)),
+.top-strip .FRURiUiRFirURiUiri:nth-child(2),
+.right-strip .FRURiUiRFirURiUiri:not(:nth-child(2)),
+.bottom-strip .FRURiUiRFirURiUiri:nth-child(2),
+.left-strip .FRURiUiRFirURiUiri:not(:nth-child(2)),
+.top-strip .RURiURdiRUiRiFi:nth-child(1),
+.right-strip .RURiURdiRUiRiFi,
+.bottom-strip .RURiURdiRUiRiFi:nth-child(1),
+.left-strip .RURiURdiRUiRiFi:nth-child(2),
+.right-strip .RU2R2UiRUiRiU2FRFi,
+.left-strip .RU2R2UiRUiRiU2FRFi,
+.top-strip .RURiURiFRFiU2RiFRFi:not(:nth-child(1)),
+.right-strip .RURiURiFRFiU2RiFRFi:nth-child(2),
+.bottom-strip .RURiURiFRFiU2RiFRFi:nth-child(2),
+.left-strip .RURiURiFRFiU2RiFRFi:not(:nth-child(1)),
+/* P Shape */
+.top-strip .LUFiUiLiULFLi:nth-child(3),
+.right-strip .LUFiUiLiULFLi:nth-child(2),
+.bottom-strip .LUFiUiLiULFLi:not(:nth-child(1)),
+.top-strip .RiUiFURUiRiFiR:nth-child(1),
+.bottom-strip .RiUiFURUiRiFiR:not(:nth-child(3)),
+.left-strip .RiUiFURUiRiFiR:nth-child(2),
+/* Right Angle */
+.top-strip .FiLiUiLU2F:nth-child(1),
+.right-strip .FiLiUiLU2F:not(:nth-child(2)),
+.bottom-strip .FiLiUiLU2F:not(:nth-child(3)),
+.left-strip .FiLiUiLU2F:nth-child(2),
+.top-strip .FRURiUi2F:nth-child(3),
+.right-strip .FRURiUi2F:nth-child(2),
+.bottom-strip .FRURiUi2F:not(:nth-child(1)),
+.left-strip .FRURiUi2F:not(:nth-child(2)),
+.top-strip .liUli2Uili2Uili2Uli:nth-child(1),
+.right-strip .liUli2Uili2Uili2Uli,
+.bottom-strip .liUli2Uili2Uili2Uli:not(:nth-child(3)),
+.top-strip .rUir2Ur2Ur2Uir:nth-child(3),
+.bottom-strip .rUir2Ur2Ur2Uir:not(:nth-child(1)),
+.left-strip .rUir2Ur2Ur2Uir,
+.top-strip .liUi2LULiUiLULULiUl:not(:nth-child(2)),
+.bottom-strip .liUi2LULiUiLULULiUl,
+.left-strip .liUi2LULiUiLULULiUl:nth-child(2),
+.top-strip .rU2RiUiRURiUiRUiri:not(:nth-child(2)),
+.right-strip .rU2RiUiRURiUiRUiri:nth-child(2),
+.bottom-strip .rU2RiUiRURiUiRUiri,
+.top-strip .LiUiLULFiLiLiUiLUF:nth-child(1),
+.right-strip .LiUiLULFiLiLiUiLUF:nth-child(1),
+.bottom-strip .LiUiLULFiLiLiUiLUF:not(:nth-child(1)),
+.left-strip .LiUiLULFiLiLiUiLUF:nth-child(2),
+.top-strip .RURiUiRiFRRURiUiFi:nth-child(3),
+.right-strip .RURiUiRiFRRURiUiFi:nth-child(2),
+.bottom-strip .RURiUiRiFRRURiUiFi:not(:nth-child(3)),
+.left-strip .RURiUiRiFRRURiUiFi:nth-child(1),
+/* Snake */
+.top-strip .LFiLiUiLUFUiLi:not(:nth-child(3)),
+.right-strip .LFiLiUiLUFUiLi:nth-child(3),
+.bottom-strip .LFiLiUiLUFUiLi:nth-child(2),
+.top-strip .RiFRURiUiFiUR:not(:nth-child(1)),
+.bottom-strip .RiFRURiUiFiUR:nth-child(2),
+.left-strip .RiFRURiUiFiUR:nth-child(3),
+/* Square */
+.right-strip .liU2LULiUL:not(:nth-child(3)),
+.bottom-strip .liU2LULiUL:not(:nth-child(1)),
+.left-strip .liU2LULiUL:nth-child(3),
+.left-strip .rUi2RiUiRUiRi:not(:nth-child(3)),
+.bottom-strip .rUi2RiUiRUiRi:not(:nth-child(3)),
+.right-strip .rUi2RiUiRUiRi:nth-child(3),
+.top-strip .LiUiLUiLiUi2L:nth-child(3),
+.bottom-strip .LiUiLUiLiUi2L:nth-child(1),
+.left-strip .LiUiLUiLiUi2L:nth-child(1),
+.top-strip .RURiURU2Ri:nth-child(1),
+.right-strip .RURiURU2Ri:nth-child(1),
+.bottom-strip .RURiURU2Ri:nth-child(3),
+.right-strip .FRiFiRURUiRi:not(:nth-child(3)),
+.bottom-strip .FRiFiRURUiRi:not(:nth-child(3)),
+.top-strip .RU2R2FRFiRU2Ri:nth-child(2),
+.right-strip .RU2R2FRFiRU2Ri:nth-child(1),
+.bottom-strip .RU2R2FRFiRU2Ri:nth-child(1),
+.left-strip .RU2R2FRFiRU2Ri:nth-child(2),
+/* T Shape */
+.top-strip .FRURiUiFi:nth-child(2),
+.bottom-strip .FRURiUiFi:nth-child(2),
+.left-strip .FRURiUiFi:not(:nth-child(2)),
+.top-strip .RURiUiRiFRFi:not(:nth-child(3)),
+.bottom-strip .RURiUiRiFRFi:not(:nth-child(3)),
+/* Two Piece */
+.top-strip .FRFirURiUiri:nth-child(1),
+.bottom-strip .FRFirURiUiri:nth-child(1),
+.bottom-strip .FirURiUiriFR:nth-child(3),
+.left-strip .FirURiUiriFR:nth-child(1),
+.right-strip .rURiUiriRURUiRi:nth-child(2),
+.bottom-strip .rURiUiriRURUiRi:nth-child(2),
+.bottom-strip .R2DRiU2RDiRiU2Ri:not(:nth-child(2)),
+.top-strip .RURiUiMiURUiri:nth-child(2),
+.bottom-strip .RURiUiMiURUiri:nth-child(2),
+/* W Shape */
+.top-strip .LiUiLUiLiULULFiLiF:nth-child(3),
+.bottom-strip .LiUiLUiLiULULFiLiF:nth-child(2),
+.left-strip .LiUiLUiLiULULFiLiF:not(:nth-child(1)),
+.top-strip .RURiURUiRiUiRiFRFi:nth-child(1),
+.right-strip .RURiURUiRiUiRiFRFi:not(:nth-child(1)),
+.bottom-strip .RURiURUiRiUiRiFRFi:nth-child(2),
+/* zY Shape */
+.right-strip .FiUiLiUi2LU2F:nth-child(1),
+.bottom-strip .FiUiLiUi2LU2F:nth-child(2),
+.left-strip .FiUiLiUi2LU2F:not(:nth-child(3)),
+.right-strip .FURU2RiUi2Fi:not(:nth-child(3)),
+.bottom-strip .FURU2RiUi2Fi:nth-child(2),
+.left-strip .FURU2RiUi2Fi:nth-child(1),
+.top-strip .LiUiLUiLiUi2LFiLiUiLUF:not(:nth-child(2)),
+.bottom-strip .LiUiLUiLiUi2LFiLiUiLUF:nth-child(2),
+.left-strip .LiUiLUiLiUi2LFiLiUiLUF:nth-child(2),
+.top-strip .RURiURU2RiFRURiUiFi:not(:nth-child(2)),
+.right-strip .RURiURU2RiFRURiUiFi:nth-child(2),
+.bottom-strip .RURiURU2RiFRURiUiFi:nth-child(2),
+/* z Shape */
+.top-strip .liUiLUiLiUi2l:nth-child(3),
+.bottom-strip .liUiLUiLiUi2l:not(:nth-child(3)),
+.left-strip .liUiLUiLiUi2l:not(:nth-child(3)),
+.top-strip .rURiURU2ri:nth-child(1),
+.right-strip .rURiURU2ri:not(:nth-child(3)),
+.bottom-strip .rURiURU2ri:not(:nth-child(1)),
+.top-strip .FiLiUiLUFUiFiLiUiLUF:nth-child(2),
+.right-strip .FiLiUiLUFUiFiLiUiLUF:not(:nth-child(3)),
+.bottom-strip .FiLiUiLUFUiFiLiUiLUF:nth-child(3),
+.left-strip .FiLiUiLUFUiFiLiUiLUF:nth-child(3),
+.top-strip .FRURiUiFiUFRURiUiFi:nth-child(2),
+.right-strip .FRURiUiFiUFRURiUiFi:nth-child(3),
+.bottom-strip .FRURiUiFiUFRURiUiFi:nth-child(1),
+.left-strip .FRURiUiFiUFRURiUiFi:not(:nth-child(3))
+{
+    background: yellow;
+    border: 1px solid var(--bg-color);
+}
+

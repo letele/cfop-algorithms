@@ -1,0 +1,270 @@
+.pll-cube{
+    --len: 8vmax;
+    --cube-len: 75%;
+    --padding: calc(0.5*(var(--len) - var(--cube-len)));
+    --strip-len:calc(0.075*var(--cube-len));
+    --strip-pad:calc(0.5*var(--padding));
+    --bg-color:#7a7a7a;
+}
+.pll-grid-wrapper{
+    height: var(--len);
+    width: var(--len);
+    position: relative;
+}
+
+.pll-cube-face{
+    background: var(--bg-color);
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: var(--cube-len); 
+    width: var(--cube-len);
+    position: absolute;
+    left: var(--padding); 
+    top: var(--padding);
+}
+.pll-square{
+    border: 1px solid var(--bg-color);
+    position: relative;
+    border-radius: 12%;
+    background: yellow;
+}
+.strip{
+    position: absolute;
+    display: grid;
+    background: #7a7a7a;
+    gap: 0.07em;
+}
+.pll-top-strip, .pll-bottom-strip{
+    grid-template-columns: repeat(3, 1fr);
+    height: var(--strip-len); 
+    width: var(--cube-len);
+    left: var(--padding); 
+}
+.pll-left-strip, .pll-right-strip{
+    height: var(--cube-len);
+    width: var(--strip-len); 
+    top: var(--padding); 
+}
+.pll-top-strip{
+    top: var(--strip-pad); 
+}
+.pll-bottom-strip{
+    bottom: var(--strip-pad); 
+}
+.pll-right-strip{
+    right: var(--strip-pad); 
+}
+.pll-left-strip{
+    left: var(--strip-pad); 
+}
+
+.pll-top-strip .aa:nth-child(1),
+.pll-right-strip .aa:not(:nth-child(1)),
+.pll-right-strip .ab:nth-child(2),
+.pll-bottom-strip .ab:nth-child(3),
+.pll-left-strip .ab:nth-child(1),
+.pll-right-strip .e:nth-child(3),
+.pll-bottom-strip .e:nth-child(2),
+.pll-left-strip .e:nth-child(3),
+.pll-left-strip .f,
+.pll-top-strip .ga:nth-child(3),
+.pll-bottom-strip .ga:nth-child(2),
+.pll-left-strip .ga:nth-child(3),
+.pll-top-strip .gc:nth-child(1),
+.pll-right-strip .gc:nth-child(3),
+.pll-bottom-strip .gc:nth-child(2),
+.pll-right-strip .gb:nth-child(odd),
+.pll-bottom-strip .gb:nth-child(2),
+.pll-bottom-strip .gd:nth-child(2),
+.pll-left-strip .gd:nth-child(odd),
+.pll-top-strip .h:nth-child(2),
+.pll-bottom-strip .h:nth-child(odd),
+.pll-bottom-strip .ja:nth-child(3),
+.pll-left-strip .ja:not(:nth-child(3)),
+.pll-right-strip .jb:not(:nth-child(3)),
+.pll-bottom-strip .jb:nth-child(1),
+.pll-top-strip .na:nth-child(3),
+.pll-bottom-strip .na:not(:nth-child(1)),
+.pll-top-strip .nb:nth-child(1),
+.pll-bottom-strip .nb:not(:nth-child(3)),
+.pll-top-strip .ra:nth-child(2),
+.pll-right-strip .ra:nth-child(1),
+.pll-left-strip .ra:nth-child(1),
+.pll-right-strip .rb:nth-child(2),
+.pll-bottom-strip .rb:nth-child(odd),
+.pll-right-strip .t:nth-child(1),
+.pll-bottom-strip .t:not(:nth-child(3)),
+.pll-top-strip .ua,
+.pll-top-strip .ub,
+.pll-top-strip .v:nth-child(1),
+.pll-bottom-strip .v:not(:nth-child(3)),
+.pll-top-strip .y:nth-child(1),
+.pll-bottom-strip .y:not(:nth-child(3)),
+.pll-right-strip .z:nth-child(2),
+.pll-bottom-strip .z:nth-child(odd)
+{
+    background: red;
+}
+
+.pll-top-strip .aa:nth-child(2),
+.pll-left-strip .aa:nth-child(odd),
+.pll-top-strip .ab:nth-child(2),
+.pll-right-strip .ab:nth-child(odd),
+.pll-top-strip .e:nth-child(1),
+.pll-right-strip .e:nth-child(2),
+.pll-bottom-strip .e:nth-child(1),
+.pll-top-strip .f:nth-child(2),
+.pll-right-strip .f:nth-child(1),
+.pll-bottom-strip .f:nth-child(1),
+.pll-top-strip .ga:not(:nth-child(3)),
+.pll-bottom-strip .ga:nth-child(1),
+.pll-bottom-strip .gc:nth-child(1),
+.pll-right-strip .gc:nth-child(2),
+.pll-left-strip .gc:nth-child(odd),
+.pll-top-strip .gb:nth-child(3),
+.pll-left-strip .gb:not(:nth-child(1)),
+.pll-top-strip .gd:nth-child(2),
+.pll-right-strip .gd:nth-child(1),
+.pll-bottom-strip .gd:nth-child(1),
+.pll-right-strip .h:nth-child(odd),
+.pll-left-strip .h:nth-child(2),
+.pll-right-strip .ja,
+.pll-top-strip .jb:nth-child(3),
+.pll-bottom-strip .jb:not(:nth-child(1)),
+.pll-right-strip .na:nth-child(3),
+.pll-left-strip .na:not(:nth-child(1)),
+.pll-right-strip .nb:nth-child(1),
+.pll-left-strip .nb:not(:nth-child(3)),
+.pll-top-strip .ra:nth-child(3),
+.pll-bottom-strip .ra:nth-child(2),
+.pll-left-strip .ra:nth-child(3),
+.pll-top-strip .rb:nth-child(1),
+.pll-right-strip .rb:nth-child(3),
+.pll-bottom-strip .rb:nth-child(2),
+.pll-top-strip .t:nth-child(3),
+.pll-bottom-strip .t:nth-child(3),
+.pll-left-strip .t:nth-child(2),
+.pll-right-strip .ua:nth-child(2),
+.pll-left-strip .ua:nth-child(odd),
+.pll-bottom-strip .ub:nth-child(2),
+.pll-left-strip .ub:nth-child(odd),
+.pll-top-strip .v:nth-child(2),
+.pll-right-strip .v:nth-child(1),
+.pll-left-strip .v:nth-child(1),
+.pll-right-strip .y:not(:nth-child(3)),
+.pll-left-strip .y:nth-child(1),
+.pll-right-strip .z:nth-child(odd),
+.pll-bottom-strip .z:nth-child(2)
+{
+    background: #07dd07;
+}
+
+
+.pll-top-strip .aa:nth-child(3),
+.pll-bottom-strip .aa:not(:nth-child(1)),
+.pll-top-strip .ab:nth-child(1),
+.pll-bottom-strip .ab:not(:nth-child(3)),
+.pll-top-strip .e:nth-child(3),
+.pll-bottom-strip .e:nth-child(3),
+.pll-left-strip .e:nth-child(2),
+.pll-top-strip .f:nth-child(1),
+.pll-right-strip .f:nth-child(3),
+.pll-bottom-strip .f:nth-child(2),
+.pll-right-strip .ga:nth-child(odd),
+.pll-left-strip .ga:nth-child(2),
+.pll-top-strip .gc:not(:nth-child(1)),
+.pll-bottom-strip .gc:nth-child(3),
+.pll-top-strip .gb:nth-child(2),
+.pll-bottom-strip .gb:nth-child(3),
+.pll-left-strip .gb:nth-child(1),
+.pll-top-strip .gd:nth-child(1),
+.pll-right-strip .gd:not(:nth-child(1)),
+.pll-right-strip .h:nth-child(2),
+.pll-left-strip .h:nth-child(odd),
+.pll-top-strip .ja:nth-child(1),
+.pll-bottom-strip .ja:not(:nth-child(3)),
+.pll-left-strip .jb,
+.pll-right-strip .na:not(:nth-child(3)),
+.pll-left-strip .na:nth-child(1),
+.pll-right-strip .nb:not(:nth-child(1)),
+.pll-left-strip .nb:nth-child(3),
+.pll-top-strip .ra:nth-child(1),
+.pll-right-strip .ra:not(:nth-child(1)),
+.pll-top-strip .rb:nth-child(3),
+.pll-left-strip .rb:not(:nth-child(1)),
+.pll-right-strip .t:nth-child(2),
+.pll-left-strip .t:nth-child(odd),
+.pll-right-strip .ua:nth-child(odd),
+.pll-bottom-strip .ua:nth-child(2),
+.pll-right-strip .ub:nth-child(odd),
+.pll-left-strip .ub:nth-child(2),
+.pll-right-strip .v:nth-child(3),
+.pll-left-strip .v:not(:nth-child(1)),
+.pll-top-strip .y:nth-child(2),
+.pll-right-strip .y:nth-child(3),
+.pll-left-strip .y:nth-child(3),
+.pll-top-strip .z:nth-child(2),
+.pll-left-strip .z:nth-child(odd)
+{
+    background: blue;
+}
+
+
+.pll-right-strip .aa:nth-child(1),
+.pll-bottom-strip .aa:nth-child(1),
+.pll-left-strip .aa:nth-child(2),
+.pll-top-strip .ab:nth-child(3),
+.pll-left-strip .ab:not(:nth-child(1)),
+.pll-top-strip .e:nth-child(2),
+.pll-right-strip .e:nth-child(1),
+.pll-left-strip .e:nth-child(1),
+.pll-top-strip .f:nth-child(3),
+.pll-right-strip .f:nth-child(2),
+.pll-bottom-strip .f:nth-child(3),
+.pll-right-strip .ga:nth-child(2),
+.pll-bottom-strip .ga:nth-child(3),
+.pll-left-strip .ga:nth-child(1),
+.pll-right-strip .gc:nth-child(1),
+.pll-bottom-strip .gc:nth-child(1),
+.pll-left-strip .gc:nth-child(2),
+.pll-top-strip .gb:nth-child(1),
+.pll-right-strip .gb:nth-child(2),
+.pll-bottom-strip .gb:nth-child(1),
+.pll-top-strip .gd:nth-child(3),
+.pll-bottom-strip .gd:nth-child(3),
+.pll-left-strip .gd:nth-child(2),
+.pll-top-strip .h:nth-child(odd),
+.pll-bottom-strip .h:nth-child(2),
+.pll-top-strip .ja:not(:nth-child(1)),
+.pll-left-strip .ja:nth-child(3),
+.pll-top-strip .jb:not(:nth-child(3)),
+.pll-right-strip .jb:nth-child(3),
+.pll-top-strip .na:not(:nth-child(3)),
+.pll-bottom-strip .na:nth-child(1),
+.pll-top-strip .nb:not(:nth-child(1)),
+.pll-bottom-strip .nb:nth-child(3),
+.pll-bottom-strip .ra:nth-child(odd),
+.pll-left-strip .ra:nth-child(2),
+.pll-top-strip .rb:nth-child(2),
+.pll-right-strip .rb:nth-child(1),
+.pll-left-strip .rb:nth-child(1),
+.pll-top-strip .t:not(:nth-child(3)),
+.pll-right-strip .t:nth-child(3),
+.pll-bottom-strip .ua:nth-child(odd),
+.pll-left-strip .ua:nth-child(2),
+.pll-right-strip .ub:nth-child(2),
+.pll-bottom-strip .ub:nth-child(odd),
+.pll-top-strip .v:nth-child(3),
+.pll-right-strip .v:nth-child(2),
+.pll-bottom-strip .v:nth-child(3),
+.pll-top-strip .y:nth-child(3),
+.pll-bottom-strip .y:nth-child(3),
+.pll-left-strip .y:nth-child(2),
+.pll-top-strip .z:nth-child(odd),
+.pll-left-strip .z:nth-child(2)
+{
+    background: orange;
+}
+
+

@@ -1,16 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
 a {
-  color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }
+ol{
+  margin: 0;
+}
+ol li{
+  margin-bottom: 0.6em;
+}
+header{
+  display: flex;
+}
+section{
+  padding-left: 0.5em;
+  margin-bottom: 0.6em;
+}
+
+.container{
+  font-family: 'Varela Round', sans-serif;
+  color: #505050;
+  position: absolute;
+  left: 2%; top: 2%;
+  height: 96%; width: 96%;
+}
+
+
+.title{
+  padding-right: 10px;
+  margin-right: 5px;
+  font-size: 1.4em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.header-nav{
+  border-left: 1px solid #000;
+  padding-left: 0.6em;
+  display: flex;
+  align-items: center;
+}
+.header-nav a{
+  margin-right: 0.6em;
+}
+.container p{
+  margin-bottom: 0.5em;
+}
+
+.algorithms-menu li{
+  margin-bottom: 0.6em;
+}
+
+.section-menu{
+  position: absolute;
+  left: 0.5em;
+  top: 2em;
+  z-index: 2;
+}
+.menu-title{
+  display: flex;
+  align-items: center;
+  padding-right: 0.3em;
+  border: 1px solid transparent;
+}
+
+.svg-container{
+  display: flex;
+  align-items: center;
+  margin-right: 0.3em;
+}
+.menu-list{
+  background: #fff;
+  border: 1px solid #00000060;
+  list-style: none;
+  padding: 0.3em;
+  min-width: 150px;
+}
+.border-title{
+  border: 1px solid #00000060;
+  border-bottom: none;
+}
+
+.menu-list li{
+  margin-bottom: 0.3em;
+}
+
+.algorithms{
+  margin-top: 1.8em;
+  max-height: 83vh;
+  overflow-y: auto;
+}
+
+.algorithms >div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alg-name{
+  align-self: flex-end;
+  margin-left: 0.5em;
+}
+
+@media screen and (min-width: 600px){
+  .algorithms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+  }
+  .algorithms >div{
+    min-width: 450px;
+  }
+  .alg-name{
+   margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .algorithms >div{
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
+  .alg-name{
+    margin-top: 0.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
