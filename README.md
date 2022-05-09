@@ -4,11 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This projects outlines algorithms used in solving the rubik's cube using the CFOP method
 
-### Available alorothms are
+### Available algorithms are
 
 1. First two layers
 2. Orientation of the last layer
-3. Permutaton of the last layer
+3. Permutation of the last layer
 
 ### A symmetrical approach
 
