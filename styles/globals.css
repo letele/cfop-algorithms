@@ -24,7 +24,7 @@ section{
 }
 
 .container{
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round','Trebuchet MS',Helvetica, sans-serif;
   color: #505050;
   position: absolute;
   left: 2%; top: 2%;
@@ -44,11 +44,33 @@ section{
   border-left: 1px solid #000;
   padding-left: 0.6em;
   display: flex;
+  gap: 1em;
   align-items: center;
 }
-.header-nav a{
-  margin-right: 0.6em;
+.header-nav a:hover,.header-nav li{
+  cursor: default;
 }
+.header-nav li{
+  list-style: none;
+}
+.header-nav>li{
+  position: relative;
+}
+.header-nav>li>ul{
+  background: #fff;
+  border: 1px solid #5555557e;;
+  margin: 0; padding: 0.2em;
+  min-width: 120px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 3;
+}
+.header-nav>li>ul>li{
+  margin: 0.5em 0;
+  margin-right: 1em;
+  font-size: 0.9em;
+}
+
 .container p{
   margin-bottom: 0.5em;
 }
@@ -68,6 +90,9 @@ section{
   align-items: center;
   padding-right: 0.3em;
   border: 1px solid transparent;
+}
+.menu-title:hover{
+  cursor: default;
 }
 
 .svg-container{

@@ -122,12 +122,12 @@ const pll = () => {
         uperm: {
             algorithms: [
                 {
-                  alg: "(R U' R U) R U (R U' R' U') R2",
-                  name: "ua" 
-                },
-                {
                   alg: "(L' U L' U') L' U' (L' U L U) L'2",
                   name: "ub" 
+                },
+                {
+                  alg: "(R U' R U) R U (R U' R' U') R2",
+                  name: "ua" 
                 }
             ],
             desc: "U Permutation" ,

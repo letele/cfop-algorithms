@@ -1,5 +1,11 @@
-import range from "./range";
-import useModal from "./useModal";
 import Footer from "./Footer";
+import Header from "./Header";
+import Section from "./Section";
+import SectionNav from "./SectionNav";
 
-export {Footer,range,useModal}
+export {
+    Footer,
+    Header,
+    Section,
+    SectionNav
+}

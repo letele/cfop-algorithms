@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from 'react'
 
 const useModal = () => {
     const [toggled, setToggled ] = useState(false)
+
+    const mouseOver = val => toggled && setToggled(val)
     
     const ref = useRef(null)
 
@@ -18,7 +20,7 @@ const useModal = () => {
         return cleanup
     }, [ref])
 
-    return { ref, setToggled , toggled, }
+    return { mouseOver, ref, setToggled , toggled, }
 }
 
 export default useModal
