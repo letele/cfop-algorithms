@@ -48,17 +48,14 @@ section{
   gap: 1em;
   align-items: center;
 }
-.header-nav a:hover,.header-nav li{
+.header-nav li{
   cursor: default;
 }
 .header-nav li{
   list-style: none;
-  color: #02779b;
-}
-.header-nav>li a{
-  color: #02779b;
 
 }
+
 
 .header-nav>li{
   position: relative;
