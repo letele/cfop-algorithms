@@ -5,6 +5,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #059bc9;
 }
 * {
   box-sizing: border-box;
@@ -52,7 +53,13 @@ section{
 }
 .header-nav li{
   list-style: none;
+  color: #02779b;
 }
+.header-nav>li a{
+  color: #02779b;
+
+}
+
 .header-nav>li{
   position: relative;
 }
