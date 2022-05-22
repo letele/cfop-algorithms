@@ -2,13 +2,13 @@ This project was bootstrapped with [`create-next-app`](https://github.com/vercel
 
 ## CFOP Algorithms
 
-This projects outlines algorithms used in solving the rubok's coube using the CFOP method
+This projects outlines algorithms used in solving the rubik's cube using the CFOP method
 
-### Available alorothms are
+### Available algorithms are
 
 1. First two layers
 2. Orientation of the last layer
-3. Permutaton of the last layer
+3. Permutation of the last layer
 
 ### A symmetrical approach
 
