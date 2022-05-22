@@ -1,8 +1,6 @@
-import Link from "next/link"
 import { v4 as uuidv4 } from 'uuid';
-import {VscChevronRight, VscChevronDown} from "react-icons/vsc";
 import {Footer, Header, SectionNav} from "../../components";
-import {range,useModal} from "../../utilities";
+import {range} from "../../utilities";
 import { f2l } from "../../data";
 
 export const getStaticPaths = async () => {
@@ -33,14 +31,11 @@ export const getStaticProps = async (context) => {
 
 function F2LAlgorithm({algs,alg}){
 
-    const {ref, toggled, setToggled} = useModal()
-
     const Squares = () => range(1,9,1).map(() => <div 
         className="square"
         key={uuidv4()}>
     </div>)
 
-    
 
     return (
         <div className="container">
