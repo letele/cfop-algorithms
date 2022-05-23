@@ -152,13 +152,13 @@ const f2l = () => {
                     hand:"righthand"
                 },
                 {
-                    alg: "(L U'2 L2 U' L)",
-                    name: "lui2l2uil",
+                    alg: "(L U'2 L2 U' L2 U' L')",
+                    name: "lui2l2uil2uili",
                     hand:"lefthand"
                 },
                 {
-                    alg: "(R' U2 R'2 U R')",
-                    name: "riu2ri2uri",
+                    alg: "(R' U2 R'2 U R'2 U R)",
+                    name: "riu2ri2uri2ur",
                     hand:"righthand"
                 },
                 {
