@@ -196,19 +196,19 @@ const oll =()=>{
             algorithms: [
                 {
                   alg: "l' U2 L U L' U l",
-                  name: "liU2LULiUL" 
+                  name: "liU2LULiUl" 
                 },
                 {
                   alg: "r U'2 R' U' R U' r'",
-                  name: "rUi2RiUiRUiRi" 
+                  name: "rUi2RiUiRUiri" 
                 },
                 {
-                  alg: "L' U' L U' L' U'2 L",
-                  name: "LiUiLUiLiUi2L" 
+                  alg: "L' U2 L U L' U L",
+                  name: "LiU2LULiUL" 
                 },
                 {
-                  alg: "R U R' U R U2 R'",
-                  name: "RURiURU2Ri" 
+                  alg: "R U'2 R' U' R U' R'",
+                  name: "RUi2RiUiRUiRi" 
                 },
                 {
                   alg: "(F R' F' R) (U R U' R')",
