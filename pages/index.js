@@ -3,6 +3,8 @@ import Link from "next/link"
 
 
 export default function Home() {
+    const date = new Date()
+
     return (
         <div className="container">
             <Head>
@@ -27,7 +29,7 @@ export default function Home() {
             </section>
 
             <footer>
-                &copy; CFOP 2022
+                &copy; CFOP {date.getFullYear()}
             </footer>
         </div>
     )
