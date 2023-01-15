@@ -112,7 +112,7 @@ const pll = () => {
         tperm: {
             algorithms: [
                 {
-                  alg: "(R U R' U') (R' F R2 U') R' U' (R U R' F')",
+                  alg: "(R U R' U') (R' F R) (R U' R' U') (R U R') F'",
                   name: "t" 
                 }
             ],
@@ -146,7 +146,7 @@ const pll = () => {
         yperm: {
             algorithms: [
                 {
-                  alg: "F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')",
+                  alg: "F (R U' R' U' R U R') F' (R U R' U') (R' F R F')",
                   name: "y" 
                 }
             ],
