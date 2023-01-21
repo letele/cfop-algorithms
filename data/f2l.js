@@ -23,7 +23,7 @@ const f2l = () => {
                   hand:"righthand" 
                 },
                 {
-                  alg: " (R U R') d' (L U'2 L2 U' L)",
+                  alg: " (R U R') d' (L U'2 L2 U' L2 U' L')",
                   name: "ruridilui2l2uil",
                   hand:"righthand" 
                 }
