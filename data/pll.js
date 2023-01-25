@@ -122,11 +122,11 @@ const pll = () => {
         uperm: {
             algorithms: [
                 {
-                  alg: "(L' U L' U') L' U' (L' U L U) L'2",
+                  alg: "(L' U L' U') (L' U' L' U) (L U L') L'",
                   name: "ub" 
                 },
                 {
-                  alg: "(R U' R U) R U (R U' R' U') R2",
+                  alg: "(R U' R U) (R U R U') (R' U' R) R",
                   name: "ua" 
                 }
             ],
