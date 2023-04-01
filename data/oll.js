@@ -247,16 +247,16 @@ const oll =()=>{
                   name: "FirURiUiriFR" 
                 },
                 {
-                  alg: "(r U R' U' r') R (U R U' R')",
+                  alg: "(r U R' U' r') (R U R U' R')",
                   name: "rURiUiriRURUiRi" 
+                },
+                {
+                  alg: "(R U R' U' R') (r U R U' r')",
+                  name: "RURiUiMiURUiri" 
                 },
                 {
                   alg: "R2 D R' U2 R D' R' U2 R'",
                   name: "R2DRiU2RDiRiU2Ri" 
-                },
-                {
-                  alg: "(R U R' U') M' (U R U' r')",
-                  name: "RURiUiMiURUiri" 
                 }
             ],
             desc: "Two Piece",
