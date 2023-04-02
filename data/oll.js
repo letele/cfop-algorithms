@@ -211,7 +211,7 @@ const oll =()=>{
                   name: "RUi2RiUiRUiRi" 
                 },
                 {
-                  alg: "(F R' F' R) (U R U' R')",
+                  alg: "(F R' F') (R U R U' R')",
                   name: "FRiFiRURUiRi" 
                 },
                 {
