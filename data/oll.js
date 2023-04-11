@@ -81,11 +81,11 @@ const oll =()=>{
         lshape: {
             algorithms: [
                 {
-                  alg: "F' U' L' U'2 (L U L' U' L) F",
+                  alg: "l' U l U l' U' l (F U' F')",
                   name: "FiUiLiUi2LULiUiLF" 
                 },
                 {
-                  alg: "F U R U2 (R' U' R U R') F'",
+                  alg: "r U' r' U' r U r' (F' U F)",
                   name: "FURU2RiUiRURIFi" 
                 },
                 {
