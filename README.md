@@ -1,5 +1,3 @@
-This project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## CFOP Algorithms
 
 This projects outlines algorithms used in solving the rubik's cube using the CFOP method
