@@ -83,7 +83,7 @@
 .RUR2UiRiFRURUiFi .oll-square:nth-child(8),
 /* Cross */
 .FRURiUi3Fi .oll-square:nth-child(odd):not(:nth-child(5)),
-.RU2R2UiR2UiR2U2R .oll-square:nth-child(odd):not(:nth-child(5)),
+.RUi2R2UiR2UiR2Ui2R .oll-square:nth-child(odd):not(:nth-child(5)),
 .rURiUiMi2URUiRiUiMi .oll-square:nth-child(even),
 /* Dots */
 .fiLiUiLUFUiFiLiUiLUF .oll-square:nth-child(n+2):not(:nth-child(5)),
@@ -160,7 +160,7 @@
 .FirURiUiriFR .oll-square:nth-child(8n+1),
 .rURiUiriRURUiRi .oll-square:nth-child(n+6):not(:nth-child(odd)),
 .R2DRiU2RDiRiU2Ri .oll-square:nth-child(n+6):not(:nth-child(even)),
-.RURiUiMiURUiri .oll-square:nth-child(6n+2),
+.RURiUiRirURUiri .oll-square:nth-child(6n+2),
 /* W Shape */
 .LiUiLUiLiULULFiLiF .oll-square:nth-child(n+3):nth-child(-n+4),
 .LiUiLUiLiULULFiLiF .oll-square:nth-child(n+7):nth-child(-n+8),
@@ -203,9 +203,9 @@
 /* Cross */
 .top-strip .FRURiUi3Fi:nth-child(odd),
 .bottom-strip .FRURiUi3Fi:nth-child(odd),
-.top-strip .RU2R2UiR2UiR2U2R:nth-child(3),
-.bottom-strip .RU2R2UiR2UiR2U2R:nth-child(3),
-.left-strip .RU2R2UiR2UiR2U2R:nth-child(odd),
+.top-strip .RUi2R2UiR2UiR2Ui2R:nth-child(3),
+.bottom-strip .RUi2R2UiR2UiR2Ui2R:nth-child(3),
+.left-strip .RUi2R2UiR2UiR2Ui2R:nth-child(odd),
 .oll-strip .rURiUiMi2URUiRiUiMi:nth-child(even),
 /* Dots */
 .top-strip .fiLiUiLUFUiFiLiUiLUF:nth-child(2),
@@ -341,8 +341,8 @@
 .right-strip .rURiUiriRURUiRi:nth-child(2),
 .bottom-strip .rURiUiriRURUiRi:nth-child(2),
 .bottom-strip .R2DRiU2RDiRiU2Ri:not(:nth-child(2)),
-.top-strip .RURiUiMiURUiri:nth-child(2),
-.bottom-strip .RURiUiMiURUiri:nth-child(2),
+.top-strip .RURiUiRirURUiri:nth-child(2),
+.bottom-strip .RURiUiRirURUiri:nth-child(2),
 /* W Shape */
 .top-strip .LiUiLUiLiULULFiLiF:nth-child(3),
 .bottom-strip .LiUiLUiLiULULFiLiF:nth-child(2),

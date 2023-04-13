@@ -37,8 +37,8 @@ const oll =()=>{
                   name: "FRURiUi3Fi" 
                 },
                 {
-                  alg: "R U2 R2 U' R2 U' R2 U2 R",
-                  name: "RU2R2UiR2UiR2U2R" 
+                  alg: "R U'2 R2 U' R2 U' R2 U'2 R",
+                  name: "RUi2R2UiR2UiR2Ui2R" 
                 },
                 {
                   alg: "(r U R' U') M'2 (U R U' R') U' M'",
@@ -252,7 +252,7 @@ const oll =()=>{
                 },
                 {
                   alg: "(R U R' U' R') (r U R U' r')",
-                  name: "RURiUiMiURUiri" 
+                  name: "RURiUiRirURUiri" 
                 },
                 {
                   alg: "R2 D R' U2 R D' R' U2 R'",
