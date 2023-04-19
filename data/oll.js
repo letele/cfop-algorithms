@@ -59,11 +59,11 @@ const oll =()=>{
                   name: "fRURiUifiUFRURiUiFi" 
                 },
                 {
-                  alg: "(F R' F' R) (U R U' R') U (F R U R' U' F')",
+                  alg: "(F R' F') (R U R U' R') U (F R U R' U' F')",
                   name: "FRiFiRURUiRiUFRURiUiFi" 
                 },
                 {
-                  alg: "(F R' F' R) (U R U' R') U' (F R U R' U' F')",
+                  alg: "(F R' F') (R U R U' R') U' (F R U R' U' F')",
                   name: "FRiFiRURUiRiUiFRURiUiFi" 
                 },
                 {
@@ -71,7 +71,7 @@ const oll =()=>{
                   name: "FRURiUiFifRURiUiFi" 
                 },
                 {
-                  alg: "(R U2 R2) (F R F') U2 (R' F R F')",
+                  alg: "(R U2 R) (R F R F') U2 (R' F R F')",
                   name: "RU2R2FRFiU2RiFRFi" 
                 }
             ],
