@@ -59,6 +59,14 @@ const oll =()=>{
                   name: "fRURiUifiUFRURiUiFi" 
                 },
                 {
+                  alg: "(F R U R' U' F')(f R U R' U' f')",
+                  name: "FRURiUiFifRURiUiFi" 
+                },
+                {
+                  alg: "(R U2 R) (R F R F') U2 (R' F R F')",
+                  name: "RU2R2FRFiU2RiFRFi" 
+                },
+                {
                   alg: "(F R' F') (R U R U' R') U (F R U R' U' F')",
                   name: "FRiFiRURUiRiUFRURiUiFi" 
                 },
@@ -67,12 +75,8 @@ const oll =()=>{
                   name: "FRiFiRURUiRiUiFRURiUiFi" 
                 },
                 {
-                  alg: "(F R U R' U' F')(f R U R' U' f')",
-                  name: "FRURiUiFifRURiUiFi" 
-                },
-                {
-                  alg: "(R U2 R) (R F R F') U2 (R' F R F')",
-                  name: "RU2R2FRFiU2RiFRFi" 
+                  alg: "(R U R' U) (R' F R F') U2 (R' F R F')",
+                  name: "RURiURiFRFiU2RiFRFi" 
                 }
             ],
             desc: "Dots",
@@ -117,10 +121,6 @@ const oll =()=>{
                 {
                   alg: "(R U2 R) (R U' R U' R') U2 (F R F')",
                   name: "RU2R2UiRUiRiU2FRFi" 
-                },
-                {
-                  alg: "(R U R' U) (R' F R F') U2 (R' F R F')",
-                  name: "RURiURiFRFiU2RiFRFi" 
                 }
             ],
             desc: "Line",
