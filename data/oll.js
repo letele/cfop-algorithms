@@ -50,34 +50,34 @@ const oll =()=>{
         },
         dots: {
             algorithms: [
-                {
-                  alg: "(f' L' U' L U f) U' (F' L' U' L U F)",
-                  name: "fiLiUiLUFUiFiLiUiLUF" 
-                },
-                {
-                  alg: "(f R U R' U' f') U (F R U R' U' F')",
-                  name: "fRURiUifiUFRURiUiFi" 
-                },
-                {
-                  alg: "(F R U R' U' F')(f R U R' U' f')",
-                  name: "FRURiUiFifRURiUiFi" 
-                },
-                {
-                  alg: "(R U2 R) (R F R F') U2 (R' F R F')",
-                  name: "RU2R2FRFiU2RiFRFi" 
-                },
-                {
-                  alg: "(F R' F') (R U R U' R') U (F R U R' U' F')",
-                  name: "FRiFiRURUiRiUFRURiUiFi" 
-                },
-                {
-                  alg: "(F R' F') (R U R U' R') U' (F R U R' U' F')",
-                  name: "FRiFiRURUiRiUiFRURiUiFi" 
-                },
-                {
-                  alg: "(R U R' U) (R' F R F') U2 (R' F R F')",
-                  name: "RURiURiFRFiU2RiFRFi" 
-                }
+              {
+                alg: "(F R U R' U' F')(f R U R' U' f')",
+                name: "FRURiUiFifRURiUiFi" 
+              },
+              {
+                alg: "(R U2 R) (R F R F') U2 (R' F R F')",
+                name: "RU2R2FRFiU2RiFRFi" 
+              },
+              {
+                alg: "(f' L' U' L U f) U' (F' L' U' L U F)",
+                name: "fiLiUiLUFUiFiLiUiLUF" 
+              },
+              {
+                alg: "(f R U R' U' f') U (F R U R' U' F')",
+                name: "fRURiUifiUFRURiUiFi" 
+              },
+              {
+                alg: "(F R' F') (R U R U' R') U (F R U R' U' F')",
+                name: "FRiFiRURUiRiUFRURiUiFi" 
+              },
+              {
+                alg: "(F R' F') (R U R U' R') U' (F R U R' U' F')",
+                name: "FRiFiRURUiRiUiFRURiUiFi" 
+              },
+              {
+                alg: "(R U R' U) (R' F R F') U2 (R' F R F')",
+                name: "RURiURiFRFiU2RiFRFi" 
+              }
             ],
             desc: "Dots",
             id:"dots"
