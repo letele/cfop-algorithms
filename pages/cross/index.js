@@ -7,7 +7,7 @@ function Cross(){
             <Header value={'Cross'}/>
             
             <section>
-                <p>Solve the cross with the white face down</p>
+                <p>Solve the cross with the white face down.</p>
             </section>
             
             <Footer />
